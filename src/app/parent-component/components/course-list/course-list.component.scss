@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &_text {
+    text-align: center;
+  }
+}
+
+.course-card {
+  margin: 10px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.instructor {
+  font-style: italic;
+}

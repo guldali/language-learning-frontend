@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="heading">Enrolled Courses</h2>
+  <div class="course-card" *ngFor="let progress of userProgressList">
+    <div class="course-header">
+      <h3 class="course-title">{{ progress.title }}</h3>
+    </div>
+    <div class="course-body">
+      <p class="course-description">{{ progress.description }}</p>
+      <div class="course-details">
+        <span class="course-duration">Duration: {{ progress.durationInHours }} hours</span>
+        <span class="course-difficulty">Difficulty Level: {{ progress.difficultyLevel }}</span>
+      </div>
+      <button class="btn" (click)="updateUserProgress(progress)">Update Progress</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<nav style="float: right">
+  <button class="btn"
+          routerLink="/user-progress"
+          [disabled]="!enrollCourses">
+    My Courses
+  </button>
+</nav>
+
+<div class="card-container">
+  <h2>Course Detail</h2>
+  <div class="course-details card-container_text">
+    <div *ngIf="course">
+      <h2>{{ course.title }}</h2>
+      <p>{{ course.description }}</p>
+      <p>{{ course.content }}</p>
+      <p>Duration: {{ course.durationInHours }} hours</p>
+      <p>Difficulty Level: {{ course.difficultyLevel }}</p>
+      <button (click)="enroll(course.id)">Enroll</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="course-list">
+  <h2 class="card-container_text">Available Courses</h2>
+  <div class="card-container">
+    <mat-card *ngFor="let course of courses" class="course-card" (click)="navigateToCourse(course.id)">
+      <mat-card-header>
+        <mat-card-title>{{ course.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="description">{{ course.description }}</p>
+        <p class="instructor">Instructor: {{ course.instructor }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
