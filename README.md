@@ -28,5 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Login
 As a login user, you can use the following information
-email: guldali@test.com
-password: 123456
+### email: guldali@test.com
+### password: 123456
